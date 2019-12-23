@@ -6,10 +6,10 @@ def key_for_min_value(name_hash)
   select_key = ""
 
   name_hash.each do |key, num|
-    if num < value
+    if value == nil
       value = num
       select_key = key
-    elsif value == nil
+    elsif num < value
       value = num
       select_key = key
     end
